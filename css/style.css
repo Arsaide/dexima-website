@@ -85,6 +85,10 @@ h6 {
       overscroll-behavior: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .wrapper {
   min-height: 100%;
   display: -webkit-box;
@@ -163,10 +167,9 @@ h6 {
 
 .btn {
   border-radius: 20px;
-  padding: 1.25rem 3.125rem;
+  padding: 1rem 2.5rem;
   text-align: center;
   font-weight: 600;
-  font-size: 1.5625rem;
   line-height: 120%;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -425,7 +428,6 @@ button {
 .welcome__page {
   background: -o-linear-gradient(327.07deg, #1836A2 9.38%, #8A64D8 92.19%);
   background: linear-gradient(122.93deg, #1836A2 9.38%, #8A64D8 92.19%);
-  padding: 12.5rem 0rem 0rem 0rem;
 }
 
 .welcome__content {
@@ -707,6 +709,10 @@ button {
     font-size: 1.125rem;
   }
 
+  .btn {
+    font-size: 1.4375rem;
+  }
+
   .menu__list {
     gap: 2.8125rem;
   }
@@ -721,6 +727,10 @@ button {
 
   .number {
     font-size: 1.375rem;
+  }
+
+  .welcome__page {
+    padding-top: 12.5rem;
   }
 
   .welcome__content {
@@ -795,6 +805,10 @@ button {
     font-size: 0.875rem;
   }
 
+  .btn {
+    font-size: 1.125rem;
+  }
+
   .menu__list {
     gap: 0.625rem;
   }
@@ -811,6 +825,10 @@ button {
     font-size: 0.9375rem;
   }
 
+  .welcome__page {
+    padding-top: 6.25rem;
+  }
+
   .welcome__content {
     gap: 5rem;
   }
@@ -824,7 +842,7 @@ button {
   }
 
   .welcome__btn {
-    margin-bottom: 12.5rem;
+    margin-bottom: 6.25rem;
   }
 
   .info__container {
@@ -903,6 +921,18 @@ button {
     }
 }
 
+@supports (font-size: clamp( 1.125rem , 1.0113636364rem  +  0.5681818182vw , 1.4375rem )) {
+    .btn {
+      font-size: clamp( 1.125rem , 1.0113636364rem  +  0.5681818182vw , 1.4375rem );
+    }
+}
+
+@supports not (font-size: clamp( 1.125rem , 1.0113636364rem  +  0.5681818182vw , 1.4375rem )) {
+    .btn {
+      font-size: calc(1.125rem + 0.3125 * (100vw - 20rem) / 55);
+    }
+}
+
 @supports (gap: clamp( 0.625rem , -0.1704545455rem  +  3.9772727273vw , 2.8125rem )) {
     .menu__list {
       gap: clamp( 0.625rem , -0.1704545455rem  +  3.9772727273vw , 2.8125rem );
@@ -951,6 +981,18 @@ button {
     }
 }
 
+@supports (padding-top: clamp( 6.25rem , 3.9772727273rem  +  11.3636363636vw , 12.5rem )) {
+    .welcome__page {
+      padding-top: clamp( 6.25rem , 3.9772727273rem  +  11.3636363636vw , 12.5rem );
+    }
+}
+
+@supports not (padding-top: clamp( 6.25rem , 3.9772727273rem  +  11.3636363636vw , 12.5rem )) {
+    .welcome__page {
+      padding-top: calc(6.25rem + 6.25 * (100vw - 20rem) / 55);
+    }
+}
+
 @supports (gap: clamp( 5rem , 3.8636363636rem  +  5.6818181818vw , 8.125rem )) {
     .welcome__content {
       gap: clamp( 5rem , 3.8636363636rem  +  5.6818181818vw , 8.125rem );
@@ -987,15 +1029,15 @@ button {
     }
 }
 
-@supports (margin-bottom: clamp( 3.125rem , 15.9090909091rem  +  -17.0454545455vw , 12.5rem )) {
+@supports (margin-bottom: clamp( 3.125rem , 7.3863636364rem  +  -5.6818181818vw , 6.25rem )) {
     .welcome__btn {
-      margin-bottom: clamp( 3.125rem , 15.9090909091rem  +  -17.0454545455vw , 12.5rem );
+      margin-bottom: clamp( 3.125rem , 7.3863636364rem  +  -5.6818181818vw , 6.25rem );
     }
 }
 
-@supports not (margin-bottom: clamp( 3.125rem , 15.9090909091rem  +  -17.0454545455vw , 12.5rem )) {
+@supports not (margin-bottom: clamp( 3.125rem , 7.3863636364rem  +  -5.6818181818vw , 6.25rem )) {
     .welcome__btn {
-      margin-bottom: calc(12.5rem + -9.375 * (100vw - 20rem) / 55);
+      margin-bottom: calc(6.25rem + -3.125 * (100vw - 20rem) / 55);
     }
 }
 
