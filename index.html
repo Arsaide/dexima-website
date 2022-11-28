@@ -2,12 +2,12 @@
 <html lang="ru">
 
 <head>
-	<title>Dexima</title>
+	<title>Dexima Software</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20221128100012">
-	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" href="css/style.min.css?_v=20221128203434">
+	<link rel="shortcut icon" href="img/logo.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -16,13 +16,22 @@
 	<div class="wrapper">
 		<header class="header">
 			<div class="header__container">
-				<a href="#" class="header__logo">LOGO</a>
+				<a href="#" class="header__logo">
+					<svg class="logo" viewBox="0 0 336 342" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M13 13L149.769 79.5V264L13 329.5V13ZM120.895 97L42.3799 58.5V285L120.895 245.5V97Z" fill="white" stroke="white" stroke-width="25" stroke-linejoin="round" />
+						<path d="M323.009 13L186.24 79.5V166L293.629 212V285L215.114 245.5V226L186.24 214.25V264L323.009 329.5V192L215.114 146V97L293.629 58.5V106L323.009 92V13Z" fill="white" stroke="white" stroke-width="25" stroke-linejoin="round" />
+						<path d="M135 173.5V90.5L26 34V308L135 254.5V217" stroke="#7019FF" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" />
+						<path d="M135 194C142.732 194 149 187.732 149 180C149 172.268 142.732 166 135 166C127.268 166 121 172.268 121 180C121 187.732 127.268 194 135 194Z" fill="#7019FF" />
+						<path d="M308.825 82.5V34L200.424 89V156L241.961 175M200.424 231.5V256L308.825 304.5V201L283.498 190.5" stroke="#7019FF" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" />
+						<path d="M250 192C257.732 192 264 185.732 264 178C264 170.268 257.732 164 250 164C242.268 164 236 170.268 236 178C236 185.732 242.268 192 250 192Z" fill="#7019FF" />
+					</svg>
+				</a>
 				<div class="header__menu menu">
 					<ul class="menu__list">
-						<li class="menu__item active__list"><a href="#" class="menu__link">Company</a></li>
-						<li class="menu__item menu__item-line"><a href="#" class="menu__link">Team</a></li>
-						<li class="menu__item menu__item-line"><a href="#" class="menu__link">Portfolio</a></li>
-						<li class="menu__item menu__item-line"><a href="#" class="menu__link">Order</a></li>
+						<li class="menu__item active__list"><a href="#" class="menu__link">Компанія</a></li>
+						<li class="menu__item menu__item-line"><a href="#" class="menu__link">Команда</a></li>
+						<li class="menu__item menu__item-line"><a href="#" class="menu__link">Портфоліо</a></li>
+						<li class="menu__item menu__item-line"><a href="#" class="menu__link">Замовлення</a></li>
 					</ul>
 				</div>
 			</div>
@@ -49,13 +58,16 @@
 					</g>
 				</svg>
 			</article>
-			<article class="info" id="info-scroll">
-				<div class="info__container">
+			<article class="info">
+				<div class="info__container" id="info-scroll">
 					<div class="info__content">
-						<h2 class="info__title title">The quick brown fox jumps over the lazy dog</h2>
-						<div class="info__text text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed purus magna, mollis ac sagittis sed, tincidunt sed enim. Nullam aliquam, urna et luctus condimentum, justo quam dignissim leo, id pulvinar nisl turpis eu tellus. Aliquam dignissim, ipsum pretium feugiat fringilla, arcu tellus sagittis tellus, ut volutpat metus arcu ac massa. Integer eget ex rutrum, posuere libero eget, finibus sem.
+						<h2 class="info__title title">DEXIMA Software</h2>
+						<div class="info__text text">Добре злагоджений колектив з професійним досвідом в різних напрямках безпечно, якісно та вчасно виконає Ваше замовлення.
+							У випадку співпраці з корпоративним замовником ми пропонуємо інтеграцію наших фахівців в колектив замовника від моменту отримання замовлення
+							до запуску проекту в стабільну роботу. Це забезпечує ефективну співпрацю при розробці програмного забезпечення.
+							Після завершення етапу розробки продукт знаходиться в надійних руках нашої підтримки, а також підлягає регулярному оновленню і захисту.
 						</div>
-						<a href="#" class="info__btn btn">More</a>
+						<a href="#" class="info__btn btn">Перейти до замовлення</a>
 					</div>
 					<div class="info__img-content">
 						<picture><source srcset="img/info/team.webp" type="image/webp"><img src="img/info/team.png" alt="About Us" class="img__img"></picture>
@@ -65,89 +77,86 @@
 			<article class="about-us">
 				<div class="about-us__container">
 					<div class="about-us__content">
-						<h3 class="about-us__title title">The quick brown fox</h3>
+						<h3 class="about-us__title title">Ми працюємо в наступних напрямках:</h3>
 						<ul class="about-us__list">
 							<li class="about-us__item">
 								<div class="item__content">
 									<div class="item-about-us__icon"><picture><source srcset="img/about-us/binary-code.webp" type="image/webp"><img src="img/about-us/binary-code.png" alt="Decor image"></picture></div>
-									<div class="item-about-us__title title">Lorem ipsum</div>
+									<div class="item-about-us__title title">Розробка сайтів та веб-додатків</div>
 									<div class="item-about-us__text text">
-										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed purus magna,
-										mollis ac sagittis sed, tincidunt sed enim. Nullam aliquam,
-										urna et luctus condimentum, justo quam dignissim leo,
-										id pulvinar nisl turpis eu tellus. Aliquam dignissim,
-										Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-										Sed purus magna, mollis ac sagittis sed, tincidunt sed enim.
+										До цієї категорії відносяться: сайти-візитівки, корпоративні сайти, промо-сайти, іміджеві сайти, сайти-каталоги, інтернет-магазини,
+										інформаційні портали, форуми та On-line сервіси. Ми займаємося всіма етапами створення сайтів від розробки технічного завдання до оптимізації
+										сайту для пошукових систем та просування сайту. Також пропонуємо послуги щодо підтримки та оновлення сайтів.
 									</div>
 								</div>
 							</li>
 							<li class="about-us__item">
 								<div class="item__content">
 									<div class="item-about-us__icon"><picture><source srcset="img/about-us/smartphone.webp" type="image/webp"><img src="img/about-us/smartphone.png" alt="Decor image"></picture></div>
-									<div class="item-about-us__title title">Lorem ipsum</div>
+									<div class="item-about-us__title title">Системи збору та опрацювання даних</div>
 									<div class="item-about-us__text text">
-										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed purus magna,
-										mollis ac sagittis sed, tincidunt sed enim. Nullam aliquam,
-										urna et luctus condimentum, justo quam dignissim leo,
-										id pulvinar nisl turpis eu tellus. Aliquam dignissim,
-										Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-										Sed purus magna, mollis ac sagittis sed, tincidunt sed enim.
+										Займаємося розробкою програмного забезпечення для автоматизованого збору даних з веб-сайтів та On-line сервісів, розробкою веб-роботів,
+										лід-генераторів, агрегаторів даних, програмних засобів для автоматизованого форматування, опрацювання та систематизації зібраних даних.
 									</div>
 								</div>
 							</li>
 							<li class="about-us__item">
 								<div class="item__content">
 									<div class="item-about-us__icon"><picture><source srcset="img/about-us/team.webp" type="image/webp"><img src="img/about-us/team.png" alt="Decor image"></picture></div>
-									<div class="item-about-us__title title">Lorem ipsum</div>
+									<div class="item-about-us__title title">Хмарні технології</div>
 									<div class="item-about-us__text text">
-										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed purus magna,
-										mollis ac sagittis sed, tincidunt sed enim. Nullam aliquam,
-										urna et luctus condimentum, justo quam dignissim leo,
-										id pulvinar nisl turpis eu tellus. Aliquam dignissim,
-										Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-										Sed purus magna, mollis ac sagittis sed, tincidunt sed enim.
+										Займаємося розробкою ETL та ELT систем, створенням хмарних сховищ та баз даних,
+										розробкою API інтерфейсів для баз даних, інтеграцією та адаптацією існуючих
+										сховищ даних; Пропонуємо послуги щодо підтримки, доопрацювання та модернізації
+										програмних рішень в сфері хмарних технологій.
 									</div>
 								</div>
 							</li>
 							<li class="about-us__item">
 								<div class="item__content">
 									<div class="item-about-us__icon"><picture><source srcset="img/about-us/binary-code.webp" type="image/webp"><img src="img/about-us/binary-code.png" alt="Decor image"></picture></div>
-									<div class="item-about-us__title title">Lorem ipsum</div>
+									<div class="item-about-us__title title">Розробка чат-ботів</div>
 									<div class="item-about-us__text text">
-										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed purus magna,
-										mollis ac sagittis sed, tincidunt sed enim. Nullam aliquam,
-										urna et luctus condimentum, justo quam dignissim leo,
-										id pulvinar nisl turpis eu tellus. Aliquam dignissim,
-										Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-										Sed purus magna, mollis ac sagittis sed, tincidunt sed enim.
+										Займаємося розробкою та розміщенням чат ботів для Вашого сайту або веб-додатку.
+										Також розробляємо ботів для Facebook, Instagram, Discord, Telegram, WhatsApp та інших платформ.
+										Займаємося розробкою чат-ботів з різними влаштуваннями та інтерфейсами: лінгвістичних чат-ботів,
+										базованих на кнопкових меню, базованих на розпізнаванні ключових слів, голосових ботів, чат-ботів
+										з елементами машинного навчання, гібридних варіантів.
 									</div>
 								</div>
 							</li>
 							<li class="about-us__item">
 								<div class="item__content">
 									<div class="item-about-us__icon"><picture><source srcset="img/about-us/smartphone.webp" type="image/webp"><img src="img/about-us/smartphone.png" alt="Decor image"></picture></div>
-									<div class="item-about-us__title title">Lorem ipsum</div>
+									<div class="item-about-us__title title">Аналітичне програмне забезпечення</div>
 									<div class="item-about-us__text text">
-										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed purus magna,
-										mollis ac sagittis sed, tincidunt sed enim. Nullam aliquam,
-										urna et luctus condimentum, justo quam dignissim leo,
-										id pulvinar nisl turpis eu tellus. Aliquam dignissim,
-										Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-										Sed purus magna, mollis ac sagittis sed, tincidunt sed enim.
+										Займаємося математичним моделюванням та оптимізацією, розробкою моделей машинного навчання,
+										зокрема нейронних мереж, розробкою предиктивних систем,
+										класифікаторів та кластеризаторів, систем синтементального аналізу тексту.
+										Проводимо аналіз та візуалізацію даних.
 									</div>
 								</div>
 							</li>
 							<li class="about-us__item">
 								<div class="item__content">
 									<div class="item-about-us__icon"><picture><source srcset="img/about-us/team.webp" type="image/webp"><img src="img/about-us/team.png" alt="Decor image"></picture></div>
-									<div class="item-about-us__title title">Lorem ipsum</div>
+									<div class="item-about-us__title title">Фінансове програмне забезпечення</div>
 									<div class="item-about-us__text text">
-										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed purus magna,
-										mollis ac sagittis sed, tincidunt sed enim. Nullam aliquam,
-										urna et luctus condimentum, justo quam dignissim leo,
-										id pulvinar nisl turpis eu tellus. Aliquam dignissim,
-										Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-										Sed purus magna, mollis ac sagittis sed, tincidunt sed enim.
+										Займаємося розробкою торгових та інвестиційних роботів, як алгоритмічних, так і
+										базованих на системах штучного інтелекту, розробкою індикаторних систем,
+										автоматизацією торгових стратегій. Пропонуємо послуги щодо
+										підтримки та модернізації фінансового програмного забезпечення.
+									</div>
+								</div>
+							</li>
+							<li class="about-us__item">
+								<div class="item__content">
+									<div class="item-about-us__icon"><picture><source srcset="img/about-us/team.webp" type="image/webp"><img src="img/about-us/team.png" alt="Decor image"></picture></div>
+									<div class="item-about-us__title title">Консультаційні послуги</div>
+									<div class="item-about-us__text text">
+										Послуги щодо аналізу та оптимізації програмного коду, тестування програмного
+										забезпечення та сайтів, бізнес-аналітика, маркетинг IT послуг.
+										Займаємося підтримкою та модернізацією.
 									</div>
 								</div>
 							</li>
@@ -159,28 +168,38 @@
 		<footer class="footer">
 			<div class="footer__container">
 				<div class="footer__content">
-					<div class="footer__logo">LOGO</div>
-					<div class="footer__contents">
-						<div class="footer__numbers">
-							<div class="footer__numbers-title footer-title">Connect with us:</div>
-							<div class="footer__numbers-content">
-								<a href="#" class="number">+380 00 00 000</a>
-								<a href="#" class="number">+380 00 00 000</a>
-								<a href="#" class="number">+380 00 00 000</a>
+					<a href="#" class="footer__logo">
+						<svg class="logo" viewBox="0 0 336 342" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M13 13L149.769 79.5V264L13 329.5V13ZM120.895 97L42.3799 58.5V285L120.895 245.5V97Z" fill="white" stroke="white" stroke-width="25" stroke-linejoin="round" />
+							<path d="M323.009 13L186.24 79.5V166L293.629 212V285L215.114 245.5V226L186.24 214.25V264L323.009 329.5V192L215.114 146V97L293.629 58.5V106L323.009 92V13Z" fill="white" stroke="white" stroke-width="25" stroke-linejoin="round" />
+							<path d="M135 173.5V90.5L26 34V308L135 254.5V217" stroke="#7019FF" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" />
+							<path d="M135 194C142.732 194 149 187.732 149 180C149 172.268 142.732 166 135 166C127.268 166 121 172.268 121 180C121 187.732 127.268 194 135 194Z" fill="#7019FF" />
+							<path d="M308.825 82.5V34L200.424 89V156L241.961 175M200.424 231.5V256L308.825 304.5V201L283.498 190.5" stroke="#7019FF" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" />
+							<path d="M250 192C257.732 192 264 185.732 264 178C264 170.268 257.732 164 250 164C242.268 164 236 170.268 236 178C236 185.732 242.268 192 250 192Z" fill="#7019FF" />
+						</svg>
+						<span>DEXIMA Software</span>
+						</ф>
+						<div class="footer__contents">
+							<div class="footer__numbers">
+								<div class="footer__numbers-title footer-title">Зв'язок з нами:</div>
+								<div class="footer__numbers-content">
+									<a href="#" class="number">+380 00 00 000</a>
+									<a href="#" class="number">+380 00 00 000</a>
+									<a href="#" class="number">+380 00 00 000</a>
+								</div>
+							</div>
+							<div class="footer__social-networks">
+								<div class="footer__social-networks-title footer-title">Соціальні мережі:</div>
+								<div class="footer__social-networks-content">
+									<a href="#" class="social-networks__icon"><picture><source srcset="img/social-networks/instagram.webp" type="image/webp"><img src="img/social-networks/instagram.png" alt="Instagram" class="icon__social-networks"></picture></a>
+									<a href="#" class="social-networks__icon"><picture><source srcset="img/social-networks/facebook.webp" type="image/webp"><img src="img/social-networks/facebook.png" alt="Facebook" class="icon__social-networks"></picture></a>
+									<a href="#" class="social-networks__icon"><picture><source srcset="img/social-networks/telegram.webp" type="image/webp"><img src="img/social-networks/telegram.png" alt="Telegram" class="icon__social-networks"></picture></a>
+									<a href="#" class="social-networks__icon"><picture><source srcset="img/social-networks/tiktok.webp" type="image/webp"><img src="img/social-networks/tiktok.png" alt="TikTok" class="icon__social-networks"></picture></a>
+									<a href="#" class="social-networks__icon"><picture><source srcset="img/social-networks/tiktok.webp" type="image/webp"><img src="img/social-networks/tiktok.png" alt="TikTok" class="icon__social-networks"></picture></a>
+									<a href="#" class="social-networks__icon"><picture><source srcset="img/social-networks/tiktok.webp" type="image/webp"><img src="img/social-networks/tiktok.png" alt="TikTok" class="icon__social-networks"></picture></a>
+								</div>
 							</div>
 						</div>
-						<div class="footer__social-networks">
-							<div class="footer__social-networks-title footer-title">Social networks:</div>
-							<div class="footer__social-networks-content">
-								<a href="#" class="social-networks__icon"><picture><source srcset="img/social-networks/instagram.webp" type="image/webp"><img src="img/social-networks/instagram.png" alt="Instagram" class="icon__social-networks"></picture></a>
-								<a href="#" class="social-networks__icon"><picture><source srcset="img/social-networks/facebook.webp" type="image/webp"><img src="img/social-networks/facebook.png" alt="Facebook" class="icon__social-networks"></picture></a>
-								<a href="#" class="social-networks__icon"><picture><source srcset="img/social-networks/telegram.webp" type="image/webp"><img src="img/social-networks/telegram.png" alt="Telegram" class="icon__social-networks"></picture></a>
-								<a href="#" class="social-networks__icon"><picture><source srcset="img/social-networks/tiktok.webp" type="image/webp"><img src="img/social-networks/tiktok.png" alt="TikTok" class="icon__social-networks"></picture></a>
-								<a href="#" class="social-networks__icon"><picture><source srcset="img/social-networks/tiktok.webp" type="image/webp"><img src="img/social-networks/tiktok.png" alt="TikTok" class="icon__social-networks"></picture></a>
-								<a href="#" class="social-networks__icon"><picture><source srcset="img/social-networks/tiktok.webp" type="image/webp"><img src="img/social-networks/tiktok.png" alt="TikTok" class="icon__social-networks"></picture></a>
-							</div>
-						</div>
-					</div>
 				</div>
 			</div>
 		</footer>
@@ -195,7 +214,7 @@
 		</div>
 	</div>
 </div> -->
-	<script src="js/app.min.js?_v=20221128100012"></script>
+	<script src="js/app.min.js?_v=20221128203434"></script>
 </body>
 
 </html>
