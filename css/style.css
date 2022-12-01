@@ -160,10 +160,13 @@ h6 {
 
 .footer-title {
   color: #fff;
-  font-weight: 700;
+  font-weight: 500;
+  letter-spacing: 1px;
 }
 
 .text {
+  font-weight: 500;
+  color: #080055;
   line-height: 160%;
 }
 
@@ -187,14 +190,18 @@ h6 {
 }
 
 .logo:hover {
-  -webkit-transform: scale(1.01);
-      -ms-transform: scale(1.01);
-          transform: scale(1.01);
+  -webkit-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 a,
 button {
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+
+.bold-text {
+  font-weight: 700;
 }
 
 .header {
@@ -221,7 +228,6 @@ button {
 }
 
 .header__logo {
-  margin: 0rem 0.9375rem 0rem 1.25rem;
   z-index: 100;
 }
 
@@ -234,7 +240,6 @@ button {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  margin: 0rem 1.25rem 0rem 0rem;
 }
 
 .menu__item {
@@ -352,7 +357,8 @@ button {
 */
 
 .footer {
-  background: #7184F9;
+  background: -o-linear-gradient(332.93deg, #D298F5 12.17%, #7958D9 52.09%, #4A88D1 89.67%);
+  background: linear-gradient(117.07deg, #D298F5 12.17%, #7958D9 52.09%, #4A88D1 89.67%);
 }
 
 .footer__container {
@@ -366,7 +372,7 @@ button {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 1.25rem 0.625rem;
+  padding: 2.5rem 0.625rem;
 }
 
 .footer__content {
@@ -408,8 +414,7 @@ button {
       flex-wrap: wrap;
 }
 
-.footer__numbers-content {
-  margin-top: 10px;
+.footer__numbers {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -417,22 +422,36 @@ button {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 16px;
+}
+
+.footer__numbers-content {
+  margin-top: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 15px;
 }
 
 .footer__social-networks-content {
-  margin-top: 10px;
+  margin-top: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  max-width: 175px;
-  gap: 15px;
+  max-width: 120px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  gap: 10px;
 }
 
 .number {
-  font-weight: 500;
+  font-weight: 300;
   color: #fff;
   -webkit-transition: color 0.3s ease 0s;
   -o-transition: color 0.3s ease 0s;
@@ -443,18 +462,17 @@ button {
   color: rgb(199, 199, 199);
 }
 
-.social-networks__icon {
-  -webkit-transition: -webkit-transform 0.3s ease 0s;
-  transition: -webkit-transform 0.3s ease 0s;
-  -o-transition: transform 0.3s ease 0s;
-  transition: transform 0.3s ease 0s;
-  transition: transform 0.3s ease 0s, -webkit-transform 0.3s ease 0s;
+.icon__social-networks {
+  width: 24px;
+  height: 24px;
+  fill: #fff;
+  -webkit-transition: fill 0.3s ease 0s;
+  -o-transition: fill 0.3s ease 0s;
+  transition: fill 0.3s ease 0s;
 }
 
-.social-networks__icon:hover {
-  -webkit-transform: scale(1.1);
-      -ms-transform: scale(1.1);
-          transform: scale(1.1);
+.icon__social-networks:hover {
+  fill: rgb(177, 177, 177);
 }
 
 .welcome__page {
@@ -636,7 +654,7 @@ button {
   position: relative;
   text-align: center;
   color: #7019FF;
-  margin-bottom: 40px;
+  margin-bottom: 80px;
 }
 
 .about-us__list {
@@ -654,10 +672,22 @@ button {
   content: "";
   display: block;
   position: absolute;
-  background: #7019FF;
+  background: #7958D9;
   width: 2px;
   height: 100%;
   right: 50%;
+}
+
+.about-us__list::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -10px;
+  right: calc(50% - 14px);
+  width: 30px;
+  height: 30px;
+  background: #7958D9;
+  border-radius: 50%;
 }
 
 .about-us__item {
@@ -689,12 +719,14 @@ button {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  text-align: justify;
 }
 
 .about-us__item:nth-child(even) {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  text-align: justify;
 }
 
 .about-us__item:nth-child(even)::after {
@@ -728,7 +760,6 @@ button {
 
 .item-about-us__text {
   max-width: 400px;
-  text-align: center;
 }
 
 @media (min-width: 75em) {
@@ -737,7 +768,7 @@ button {
   }
 
   .footer-title {
-    font-size: 1.375rem;
+    font-size: 1.25rem;
   }
 
   .text {
@@ -754,6 +785,14 @@ button {
 
   .logo {
     height: 3.75rem;
+  }
+
+  .header__container {
+    padding-left: 1.25rem;
+  }
+
+  .header__container {
+    padding-right: 1.25rem;
   }
 
   .menu__list {
@@ -773,7 +812,7 @@ button {
   }
 
   .number {
-    font-size: 1.375rem;
+    font-size: 1.125rem;
   }
 
   .welcome__page {
@@ -836,6 +875,10 @@ button {
     display: none;
   }
 
+  .about-us__list::before {
+    display: none;
+  }
+
   .about-us__item::after {
     display: none;
   }
@@ -864,7 +907,7 @@ button {
   }
 
   .text {
-    font-size: 0.875rem;
+    font-size: 1rem;
   }
 
   .btn {
@@ -877,6 +920,14 @@ button {
 
   .logo {
     height: 2.5rem;
+  }
+
+  .header__container {
+    padding-left: 0.625rem;
+  }
+
+  .header__container {
+    padding-right: 0.625rem;
   }
 
   .menu__list {
@@ -896,7 +947,7 @@ button {
   }
 
   .number {
-    font-size: 0.9375rem;
+    font-size: 1rem;
   }
 
   .welcome__page {
@@ -975,27 +1026,27 @@ button {
     }
 }
 
-@supports (font-size: clamp( 1rem , 0.8636363636rem  +  0.6818181818vw , 1.375rem )) {
+@supports (font-size: clamp( 1rem , 0.9090909091rem  +  0.4545454545vw , 1.25rem )) {
     .footer-title {
-      font-size: clamp( 1rem , 0.8636363636rem  +  0.6818181818vw , 1.375rem );
+      font-size: clamp( 1rem , 0.9090909091rem  +  0.4545454545vw , 1.25rem );
     }
 }
 
-@supports not (font-size: clamp( 1rem , 0.8636363636rem  +  0.6818181818vw , 1.375rem )) {
+@supports not (font-size: clamp( 1rem , 0.9090909091rem  +  0.4545454545vw , 1.25rem )) {
     .footer-title {
-      font-size: calc(1rem + 0.375 * (100vw - 20rem) / 55);
+      font-size: calc(1rem + 0.25 * (100vw - 20rem) / 55);
     }
 }
 
-@supports (font-size: clamp( 0.875rem , 0.7840909091rem  +  0.4545454545vw , 1.125rem )) {
+@supports (font-size: clamp( 1rem , 0.9545454545rem  +  0.2272727273vw , 1.125rem )) {
     .text {
-      font-size: clamp( 0.875rem , 0.7840909091rem  +  0.4545454545vw , 1.125rem );
+      font-size: clamp( 1rem , 0.9545454545rem  +  0.2272727273vw , 1.125rem );
     }
 }
 
-@supports not (font-size: clamp( 0.875rem , 0.7840909091rem  +  0.4545454545vw , 1.125rem )) {
+@supports not (font-size: clamp( 1rem , 0.9545454545rem  +  0.2272727273vw , 1.125rem )) {
     .text {
-      font-size: calc(0.875rem + 0.25 * (100vw - 20rem) / 55);
+      font-size: calc(1rem + 0.125 * (100vw - 20rem) / 55);
     }
 }
 
@@ -1032,6 +1083,30 @@ button {
 @supports not (height: clamp( 2.5rem , 2.0454545455rem  +  2.2727272727vw , 3.75rem )) {
     .logo {
       height: calc(2.5rem + 1.25 * (100vw - 20rem) / 55);
+    }
+}
+
+@supports (padding-left: clamp( 0.625rem , 0.3977272727rem  +  1.1363636364vw , 1.25rem )) {
+    .header__container {
+      padding-left: clamp( 0.625rem , 0.3977272727rem  +  1.1363636364vw , 1.25rem );
+    }
+}
+
+@supports not (padding-left: clamp( 0.625rem , 0.3977272727rem  +  1.1363636364vw , 1.25rem )) {
+    .header__container {
+      padding-left: calc(0.625rem + 0.625 * (100vw - 20rem) / 55);
+    }
+}
+
+@supports (padding-right: clamp( 0.625rem , 0.3977272727rem  +  1.1363636364vw , 1.25rem )) {
+    .header__container {
+      padding-right: clamp( 0.625rem , 0.3977272727rem  +  1.1363636364vw , 1.25rem );
+    }
+}
+
+@supports not (padding-right: clamp( 0.625rem , 0.3977272727rem  +  1.1363636364vw , 1.25rem )) {
+    .header__container {
+      padding-right: calc(0.625rem + 0.625 * (100vw - 20rem) / 55);
     }
 }
 
@@ -1083,15 +1158,15 @@ button {
     }
 }
 
-@supports (font-size: clamp( 0.9375rem , 0.7784090909rem  +  0.7954545455vw , 1.375rem )) {
+@supports (font-size: clamp( 1rem , 0.9545454545rem  +  0.2272727273vw , 1.125rem )) {
     .number {
-      font-size: clamp( 0.9375rem , 0.7784090909rem  +  0.7954545455vw , 1.375rem );
+      font-size: clamp( 1rem , 0.9545454545rem  +  0.2272727273vw , 1.125rem );
     }
 }
 
-@supports not (font-size: clamp( 0.9375rem , 0.7784090909rem  +  0.7954545455vw , 1.375rem )) {
+@supports not (font-size: clamp( 1rem , 0.9545454545rem  +  0.2272727273vw , 1.125rem )) {
     .number {
-      font-size: calc(0.9375rem + 0.4375 * (100vw - 20rem) / 55);
+      font-size: calc(1rem + 0.125 * (100vw - 20rem) / 55);
     }
 }
 
