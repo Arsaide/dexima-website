@@ -209,6 +209,7 @@ button {
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 100;
 }
 
 .header__container {
@@ -223,7 +224,9 @@ button {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background: rgba(19, 19, 19, 0.3);
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(53, 0, 95, 0.25)), to(rgba(53, 0, 95, 0.25))), -webkit-gradient(linear, left top, right top, color-stop(0.77%, rgba(208, 132, 255, 0.8)), color-stop(98.24%, rgba(106, 71, 248, 0.8)));
+  background: -o-linear-gradient(bottom, rgba(53, 0, 95, 0.25), rgba(53, 0, 95, 0.25)), -o-linear-gradient(left, rgba(208, 132, 255, 0.8) 0.77%, rgba(106, 71, 248, 0.8) 98.24%);
+  background: linear-gradient(0deg, rgba(53, 0, 95, 0.25), rgba(53, 0, 95, 0.25)), linear-gradient(90deg, rgba(208, 132, 255, 0.8) 0.77%, rgba(106, 71, 248, 0.8) 98.24%);
   border-radius: 20px;
 }
 
@@ -623,7 +626,11 @@ button {
 }
 
 .info__text {
-  margin: 3.125rem 0rem 4.375rem 0rem;
+  margin-top: 3.125rem;
+}
+
+.info .text-info {
+  margin-bottom: 4.375rem;
   max-width: 560px;
 }
 
@@ -760,6 +767,51 @@ button {
 
 .item-about-us__text {
   max-width: 400px;
+}
+
+.no-webp .welcome-banner{
+  background: url("../img/teambg.jpg") 0 100%/cover no-repeat; }
+
+.welcome-banner {
+  margin-top: 150px;
+  height: 471px;
+  overflow: hidden;
+  position: relative;
+  -webkit-transition: -webkit-transform 0.3s ease 0s, -webkit-filter 0.3s ease 0s;
+  transition: -webkit-transform 0.3s ease 0s, -webkit-filter 0.3s ease 0s;
+  -o-transition: transform 0.3s ease 0s, filter 0.3s ease 0s;
+  transition: transform 0.3s ease 0s, filter 0.3s ease 0s;
+  transition: transform 0.3s ease 0s, filter 0.3s ease 0s, -webkit-transform 0.3s ease 0s, -webkit-filter 0.3s ease 0s;
+}
+
+.welcome-banner:hover {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-filter: contrast(120%);
+          filter: contrast(120%);
+}
+
+.welcome-banner__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  height: inherit;
+  position: relative;
+  z-index: 2;
+}
+
+.welcome-banner__title {
+  color: #fff;
+  letter-spacing: 2px;
+  text-shadow: 3px 2px 21px rgba(255, 255, 255, 0.5);
 }
 
 @media (min-width: 75em) {
@@ -1008,8 +1060,29 @@ button {
 }
 
 @media (max-width: 47.99875em) {
+  .header._header-scroll {
+    position: fixed;
+    top: -200%;
+    background-color: rgba(19, 19, 19, 0.8);
+    border-radius: 20px;
+  }
+
+  .header._header-show {
+    -webkit-transition: top 1s ease 0s;
+    -o-transition: top 1s ease 0s;
+    transition: top 1s ease 0s;
+    top: 0;
+  }
+
   .footer__container {
     padding-left: 0.625rem;
+  }
+}
+
+@media (max-width: 47.99875em) and (max-width: 1169.98px) {
+  .header._header-scroll {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
   }
 }
 
@@ -1290,3 +1363,5 @@ button {
     }
 }
 }
+
+.webp .welcome-banner{ background: url(../img/teambg.webp) 0 100%/cover no-repeat; }
