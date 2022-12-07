@@ -25,113 +25,55 @@
 					<ul class="menu__list">
 						<li class="menu__item menu__item-line"><a href="./index.html" class="menu__link">Компанія</a></li>
 						<li class="menu__item menu__item-line"><a href="./team.html" class="menu__link">Команда</a></li>
-						<li class="menu__item active__list"><a href="./portfolio.html" class="menu__link">Портфоліо</a></li>
-						<li class="menu__item menu__item-line"><a href="./order.html" class="menu__link">Замовлення</a></li>
+						<li class="menu__item menu__item-line"><a href="./portfolio.html" class="menu__link">Портфоліо</a></li>
+						<li class="menu__item active__list"><a href="./order.html" class="menu__link">Замовлення</a></li>
 					</ul>
 				</div>
 			</div>
 		</header>
 		<main class="page">
-			<article class="welcome-banner">
-				<div class="banner-portfolio"></div>
-			</article>
-			<article class="info">
-				<div class="info__container" id="info-scroll">
-					<div class="info__content">
-						<h2 class="info__title title-info title">Проекти нашої команди</h2>
-						<div class="info__text text">Добре злагоджений колектив з професійним досвідом в різних напрямках безпечно,
-							якісно та вчасно виконає Ваше замовлення. Підчас співпраці з корпоративним замовником ми пропонуємо інтеграцію
-							наших фахівців в колектив замовника від моменту отримання замовлення до запуску проекту <span class="bold-text">в стабільну роботу</span>.
-							Це забезпечує ефективнішу співпрацю при розробці програмного забезпечення.
-							По завершенню етапу розробки продукт знаходиться в <span class="bold-text">надійних руках нашої підтримки</span>, а також підлягає регулярному оновленню і захисту.
+			<article class="order">
+				<div class="order__container">
+					<form class="form__body" action="files/sendmail/sendmail.php" method="POST" id="form">
+						<h2 class="order__title title">Замовлення</h2>
+						<div class="form__item">
+							<label for="formName" class="form__label">ПІБ*:</label>
+							<input id="formName" type="text" name="name" class="form__input _req ">
 						</div>
-					</div>
-			</article>
-			<article class="grid-main">
-				<div class="grid-main__container">
-					<h2 class="grid-main__title title">Проекти нашої команди</h2>
-					<div class="grid-main__content">
-						<ul class="grid__items">
-							<li class="grid__item">
-								<a href="#" class="grid__cell">
-									<div class="grid__content">
-										<div class="grid__img">
-											<picture><source srcset="img/porfolio/atepalihin-web-site.webp" type="image/webp"><img class="grid__grid-main-img" src="img/porfolio/atepalihin-web-site.png" alt=""></picture>
-										</div>
-										<div class="grid__subtitle">
-											<p>Ateapalihin Web-Site</p>
-										</div>
-										<div class="grid__button more-btn btn">Переглянути</div>
-									</div>
-								</a>
-							</li>
-							<li class="grid__item">
-								<a href="#" class="grid__cell">
-									<div class="grid__content">
-										<div class="grid__img">
-											<picture><source srcset="img/porfolio/atepalihin-web-site.webp" type="image/webp"><img class="grid__grid-main-img" src="img/porfolio/atepalihin-web-site.png" alt=""></picture>
-										</div>
-										<div class="grid__subtitle">
-											<p>Ateapalihin Web-Site</p>
-										</div>
-										<div class="grid__button more-btn btn">More</div>
-									</div>
-								</a>
-							</li>
-							<li class="grid__item">
-								<a href="#" class="grid__cell">
-									<div class="grid__content">
-										<div class="grid__img">
-											<picture><source srcset="img/porfolio/atepalihin-web-site.webp" type="image/webp"><img class="grid__grid-main-img" src="img/porfolio/atepalihin-web-site.png" alt=""></picture>
-										</div>
-										<div class="grid__subtitle">
-											<p>Ateapalihin Web-Site</p>
-										</div>
-										<div class="grid__button more-btn btn">More</div>
-									</div>
-								</a>
-							</li>
-							<li class="grid__item">
-								<a href="#" class="grid__cell">
-									<div class="grid__content">
-										<div class="grid__img">
-											<picture><source srcset="img/porfolio/atepalihin-web-site.webp" type="image/webp"><img class="grid__grid-main-img" src="img/porfolio/atepalihin-web-site.png" alt=""></picture>
-										</div>
-										<div class="grid__subtitle">
-											<p>Ateapalihin Web-Site</p>
-										</div>
-										<div class="grid__button more-btn btn">More</div>
-									</div>
-								</a>
-							</li>
-							<li class="grid__item">
-								<a href="#" class="grid__cell">
-									<div class="grid__content">
-										<div class="grid__img">
-											<picture><source srcset="img/porfolio/atepalihin-web-site.webp" type="image/webp"><img class="grid__grid-main-img" src="img/porfolio/atepalihin-web-site.png" alt=""></picture>
-										</div>
-										<div class="grid__subtitle">
-											<p>Ateapalihin Web-Site</p>
-										</div>
-										<div class="grid__button more-btn btn">More</div>
-									</div>
-								</a>
-							</li>
-							<li class="grid__item">
-								<a href="#" class="grid__cell">
-									<div class="grid__content">
-										<div class="grid__img">
-											<picture><source srcset="img/porfolio/atepalihin-web-site.webp" type="image/webp"><img class="grid__grid-main-img" src="img/porfolio/atepalihin-web-site.png" alt=""></picture>
-										</div>
-										<div class="grid__subtitle">
-											<p>Ateapalihin Web-Site</p>
-										</div>
-										<div class="grid__button more-btn btn">More</div>
-									</div>
-								</a>
-							</li>
-						</ul>
-					</div>
+						<div class="form__item">
+							<label for="formOrg" class="form__label">Компанія, організація*:</label>
+							<input id="formOrg" type="text" name="company" class="form__input _req ">
+						</div>
+						<div class="form__item">
+							<label for="formEmail" class="form__label">E-mail*:</label>
+							<input id="formEmail" type="text" name="email" class="form__input _req _email">
+						</div>
+						<div class="form__item">
+							<label for="formNumber" class="form__label">Номер телефону*:</label>
+							<input id="formNumber" type="text" name="number" class="form__input _req ">
+						</div>
+						<div class="form__item">
+							<label for="formMessage" class="form__label">Особливості замовлення, об'єм роботи, об'єм данних для аналізу:</label>
+							<textarea name="message" id="formMessage" class="form__input _req "></textarea>
+						</div>
+						<div class="form__item">
+							<h3 class="form__title">Макет, дизайн та інші</h3>
+							<div class="file">
+								<div class="file__item">
+									<input id="formFile" accept=".fig, .png, .jpg, .psd" type="file" name="attachedFile" class="file__input" data-multiple-caption="{count} файлов выбрано" multiple>
+									<div class="file__button">Вибрати</div>
+								</div>
+								<div id="formPreview" class="file__preview"></div>
+							</div>
+						</div>
+						<div class="form__item">
+							<div class="checkbox">
+								<input id="formAgreement" type="checkbox" name="agreement" class="checkbox__input _req ">
+								<label for="formAgreement" class="checkbox__label"><span>Я даю свій дозвіл на обробку персональних даних відповідно до <a href="#">умови</a>*.</span></label>
+							</div>
+						</div>
+						<button type="submit" class="form__btn">Віправити</button>
+					</form>
 				</div>
 			</article>
 		</main>
